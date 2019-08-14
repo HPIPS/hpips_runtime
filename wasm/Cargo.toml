@@ -1,0 +1,23 @@
+[profile.release]
+lto = true
+panic = 'abort'
+
+[workspace]
+members = []
+
+[lib]
+crate-type = ['cdylib']
+
+[features]
+default = []
+std = ['node-template-runtime/std']
+
+[dependencies.node-template-runtime]
+default-features = false
+path = '..'
+
+[package]
+authors = ['hpips']
+edition = '2018'
+name = 'hpips-runtime-wasm'
+version = '1.0.0'
