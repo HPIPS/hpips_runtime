@@ -10,14 +10,14 @@ crate-type = ['cdylib']
 
 [features]
 default = []
-std = ['node-template-runtime/std']
+std = ['hpips-node-runtime/std']
 
-[dependencies.node-template-runtime]
+[dependencies.hpips-node-runtime]
 default-features = false
 path = '..'
 
 [package]
 authors = ['hpips']
 edition = '2018'
-name = 'hpips-runtime-wasm'
+name = 'hpips-node-runtime-wasm'
 version = '1.0.0'
