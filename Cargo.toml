@@ -1,8 +1,12 @@
 [package]
 authors = ['hpips']
 edition = '2018'
-name = 'hpips-node-runtime'
+name = 'hpips-runtime'
 version = '1.0.0'
+
+[dependencies]
+# restrict version of syn, see https://github.com/paritytech/substrate/issues/2326
+syn = { version = ">= 0.15.6, < 0.15.45", features = ["full"] }
 
 [features]
 default = ['std']
